@@ -1,36 +1,16 @@
 // ==UserScript==
-// @name         Paper.io ZOOM HACK - Paperio Hacks - Best Paper Cheat 2019
-// @description  Paperio Mods Features: Zoom Hack, Unlock All Skins, Change Everything, Auto Turn Bot, FPS paper-io.com
-// @namespace    GameHackerC
-// @author       GameHackerC
-// @version      1.1
+// @name         Paper.io Hacks
+// @description  Paperio Mods
+// @namespace    pronoy2108
+// @author       pronoy2108
+// @version      1.2
 // @require      http://code.jquery.com/jquery-3.3.1.min.js
 // @updateURL    https://iomods.org/mods/paperio.user.js
 // @downloadURL  https://iomods.org/mods/paperio.user.js
 // @match        *://paper-io.com/*
-// @match        *iogames.space/*
-// @match        *titotu.io/*
-// @match        *io-games.io/*
-// @match        *://paper-io.space
 // @match        *://paper.io
 // @run-at document-idle
 // ==/UserScript==
-
-setTimeout(function() {
-//tanitim belgeseli
-var colorize,lnk,text,ministyler
-lnk = ["SLITHERE.COM", "KRUNKERIO.ORG", "KRUNKERIO.NET", "SHELLSHOCKIO.ORG", "MOOMOOIOPLAY.COM", "SURVIVIO.INFO", "ZOMBSROYALEIO.ORG", "MOPE-IO.NET", "MOPEIOGAME.COM", "DIEPIOPLAY.COM", "DIEPIOPLAY.ORG", "SLITHERIOPLAY.ORG", "SKRIBBL-IO.NET", "SPINZ-IO.NET", "BONK-IO.NET", "TANKSMITHIO.ORG", "DEEEEP-IO.NET", "IOGAMESLIST.ORG", "IOMODS.ORG", "IO-OYUNLAR.COM"];
-text = "<b>";
-lnk.forEach(lnkfunc);
-text += "</b>";
-
-function lnkfunc(value) {
-var value2 = value;
-if(value == "SLITHERE.COM" || value == "KRUNKERIO.ORG" || value == "KRUNKERIO.NET") { colorize = true; } else { colorize = false; }
-if(value == "MOPE-IO.NET") { value2="MOPEIO.NET"; } if(value == "BONK-IO.NET") { value2="BONKIO.NET"; } if(value == "SPINZ-IO.NET") { value2="SPINZIO.NET"; } if(value == "DEEEEP-IO.NET") { value2="DEEEEPIO.NET"; } if(value == "SKRIBBL-IO.NET") { value2="SKRIBBLIO.NET"; } if(value == "IO-OYUNLAR.COM") { value2="IOOYUNLAR.COM"; }
-if(colorize == false){ministyler = "color:white;font-size:12px;padding:3px;";} else {ministyler = "color:yellow;font-size:12px;padding:3px;";}
-text += '<a href="http://'+value+'" target="_blank" style="'+ministyler+'">'+value2+'</a> - ';
-}
 
 //genel isimlendirme ve ayarlar
  this.settings = {
@@ -67,13 +47,10 @@ text += '<a href="http://'+value+'" target="_blank" style="'+ministyler+'">'+val
 	 optionstyler: "font-weight:bold;color:black;font-size:14px;",
      optionstyler2: "font-weight:bold;color:black;font-size:14px;",
      optionstyler3: "color:black;font-size:11px;",
-     facebooker: '<div id="fb-root" style="display: inline-block;"></div><script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v3.2"></script><div class="fb-like" style="display: inline-block;" data-href="https://facebook.com/slitherecom" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>',
-     youtuber: "<script src=\"https://apis.google.com/js/platform.js\"></script><div class=\"g-ytsubscribe\" data-channelid=\"UCy6xGaMhm74YeHMDGgEr7kg\" data-layout=\"default\" style=\"display: inline-block;\" data-count=\"default\"></div>",
      formstyle: "border:2px solid black;border-radius:20px;padding:5px;background-color: rgba(245, 245, 245, 1.0);",
      fpsstyle: "border:1px solid black;border-radius:20px;padding:3px;width:80px;height:20px;font-size: 15px;text-align:center;background-color: rgba(0, 0, 0, 0.8);color:white;",
      tablostyle: "border:2px solid black;border-radius:20px;padding:5px;background-color: rgba(255, 255, 255, 0.3);",
      liststyler: "color:white;background-color: black;padding:3px;border-style:double;-webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.39);-moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.39);box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.39);",
-   	 imagelist: '<a href="https://instagram.com/aecicekdagi" target="_blank"><img src="https://iomods.org/mods/instagram.jpg"></a> <a href="https://www.youtube.com/c/pignuts" target="_blank"><img src="https://iomods.org/mods/youtube.jpg"></a> <a href="https://facebook.com/slitherecom" target="_blank"><img src="https://iomods.org/mods/facebook.jpg"></a></br>',
 };
 
 //degisenkisimlar
